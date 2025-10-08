@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
+// bg-[linear-gradient(to_right,#FFF0F0_1px,transparent_1px),linear-gradient(to_bottom,#FFF0F0_1px,transparent_1px)]
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${robotoMono.variable}  font-mono`}
       >
-        <div className="flex flex-col  absolute inset-0 -z-10 h-full w-full bg-[#EDE4D5] bg-[linear-gradient(to_right,#FFF0F0_1px,transparent_1px),linear-gradient(to_bottom,#FFF0F0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="flex flex-col  absolute inset-0 -z-10 h-full w-full   bg-[size:6rem_4rem]">
       <Header/>
         <main className="flex-1 flex">
         {children}

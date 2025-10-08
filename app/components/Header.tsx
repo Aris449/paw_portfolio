@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ScaleAnimationWrapper } from './Animations';
+import ThemeToggle from './ThemeToggle';
 
 
 const Header = () => {
@@ -16,9 +17,10 @@ const Header = () => {
   return (
     <header className='h-[100px]'>
       <div className='flex justify-between p-4'>
-        <ScaleAnimationWrapper>
 
-        <Image src="/sun.png" alt='sun' width={50} height={50} className="flex-none self-start"/>
+
+        <ScaleAnimationWrapper>
+        <ThemeToggle/>
         </ScaleAnimationWrapper>
 
           <ScaleAnimationWrapper style='w-96 flex justify-between'>
